@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta id="meta-desc" name="description"
+    content="Scaling robot learning toward generalist capabilities demands reasoning-based policy generalization across diverse robotic embodiments.">
+  <meta id="meta-author" name="author" content="Yuxin Cai, Yaru Niu, Wei-Yun Yau, Ding Zhao, Chen Lv">
+  <title>Reasoning as a Bridge: Generalizing Policies Across Robotic Embodiments</title>
+
+  <link href="./assets/css/fonts.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/bulma.min.css">
+  <link rel="stylesheet" href="./assets/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./assets/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./assets/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./assets/css/academic.min.css">
+  <link rel="stylesheet" href="./assets/css/index.css">
+  
+
+  <link rel="icon" type="image/png" href="./assets/images/corl_logo.png">
+  <img src="./assets/images/corl_logo.png" alt="Workshop Logo" style="max-height: 100px;">
+
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body pad-zero">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Reasoning as a Bridge: Generalizing Policies Across Robotic Embodiments</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <h1>CoRL 2025 Workshop</h1>
+                <h1 class="is-4">Date: To be Announced</h1>
+              </span>
+            </div>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="./call-for-contributions" class="external-link button is-normal is-rounded is-primary">
+                    <span class="icon"><i class="fas fa-newspaper"></i></span>
+                    <span>Call for Contributions</span>
+                  </a>
+                </span>
+                <br>
+                <span class="link-block">
+                  <a href="#speakers" class="external-link button is-normal is-rounded is-danger">
+                    <span class="icon"><i class="fas fa-users icon"></i></span>
+                    <span>Speakers</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="#organizers" class="external-link button is-normal is-rounded is-warning">
+                    <span class="icon"><i class="fas fa-users icon"></i></span>
+                    <span>Organizers</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="#schedule" class="external-link button is-normal is-rounded is-info">
+                    <span class="icon"><i class="far fa-calendar-alt icon"></i></span>
+                    <span>Schedule</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="#contact" class="external-link button is-normal is-rounded is-success">
+                    <span class="icon"><i class="fas fa-address-book icon"></i></span>
+                    <span>Contact</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">Overview</h2>
+          <div class="content has-text-justified">
+            <p>
+              Scaling robot learning toward generalist capabilities requires more than accumulating vast datasets across diverse platforms; it demands generalizing policies across different embodiments — such as manipulation arms, quadrupeds, wheeled robots, and aerial vehicles — each with distinct dynamics, morphologies, and sensorimotor constraints.
+              <br><br>
+              While recent advances like π0, OpenVLA, and RT-X show that large-scale training across multiple embodiments is possible, most follow-up approaches rely on domain adaptation strategies — such as fine-tuning, prompting, or adapters — rather than solving the core challenge: how to learn policies that generalize structurally across different bodies.
+              <br><br>
+              We argue that achieving true policy generalization across embodiments demands robust abstractions over perception, action, and control. Approaches such as reasoning, imitation learning, and morphology-aware representation learning all offer complementary pathways toward this goal. In particular, structured reasoning modules — leveraging intermediate world models, causal structures, or semantic embeddings — may enable transferable decision-making across embodiments. Similarly, imitation learning and skill transfer from diverse agents or tasks can offer practical and scalable methods to align policies across morphologies.
+              <br><br>
+              Language provides a promising modality for expressing reasoning steps and policies in an interpretable and transferable way. By using language-conditioned representations of goals, plans, and affordances, robots can leverage foundation models (e.g., VLMs, LLMs) to support scalable policy generalization across embodiments. However, alternative approaches that directly learn shared policies or skills across bodies — without explicit reasoning — are equally important.
+              <br><br>
+              This workshop will focus on one central question: <strong>How can we enable robust policy generalization across diverse robotic embodiments — through reasoning, imitation, representation learning, or other scalable mechanisms?</strong>
+              <br><br>
+              Topics and guiding questions include:
+              <ul>
+                <li><strong>Reasoning for Policy Generalization:</strong> How can reasoning modules help bridge embodiment gaps through structured decision-making?</li>
+                <li><strong>Imitation Learning and Cross-Embodiment Skill Transfer:</strong> How can policies trained via imitation or demonstrations from one body generalize to another?</li>
+                <li><strong>Intermediate Representations for Generalization:</strong> What semantic, causal, or dynamics-invariant representations best support transfer across embodiments?</li>
+                <li><strong>Language and Foundation Models:</strong> How can language or large models (VLMs/LLMs) support embodied reasoning or transferable policy expression?</li>
+                <li><strong>Embodiment-Aware Learning:</strong> How can policies adapt to specific actuation, perception, and morphology while maintaining generality?</li>
+                <li><strong>Benchmarks and Evaluation:</strong> How do we meaningfully measure cross-embodiment policy generalization in both simulation and real-world settings?</li>
+              </ul>
+              <br>
+              The workshop will feature invited talks from leading experts, contributed presentations, panel discussions, and interactive sessions to foster deep cross-disciplinary conversations.
+              <br><br>
+              <strong>Why This Workshop Benefits the Robot Learning Community</strong>
+              <br>
+              Policy generalization is a core challenge for deploying flexible, scalable, and adaptive robot learning systems. Without the ability to generalize across bodies, tasks, and sensorimotor constraints, robots must be retrained for every new platform — a fundamental bottleneck for real-world applications.
+              <br><br>
+              This workshop addresses the urgent need for scalable methods that bridge embodiment gaps — whether through reasoning, shared representations, imitation learning, or foundation model adaptation. By broadening the conversation to include diverse approaches, this workshop will define critical open problems, identify useful abstractions, and connect sub-communities working toward generalist robotic intelligence.
+              <br><br>
+              <strong>Intended Audience and Presenter Communities</strong>
+              <br>
+              This workshop targets researchers from:
+              <ul>
+                <li>Robot Learning (policy generalization, cross-domain transfer, imitation learning)</li>
+                <li>Embodied AI (vision-language-action reasoning, multimodal foundation models, multimodal reasoning)</li>
+                <li>Reinforcement and Imitation Learning (transfer, continual learning, causal RL)</li>
+                <li>Representation Learning (embodiment-aware and dynamics-invariant modelling)</li>
+              </ul>
+              <br>
+              We intend to draw invited speakers and participants from leading academic groups and industry research labs working at the intersection of robot learning, reasoning, cross-embodiment transfer, and scalable generalist intelligence.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="speakers" class="section">
+    <div class="container is-max-desktop">
+      <h2 class="center title is-3">Speakers</h2>
+      <div class="columns is-multiline is-centered">
+        <div class="column is-one-sixth has-text-centered">
+          <figure class="image is-128x128 is-inline-block">
+            <img src="./assets/images/speaker1.png" alt="Speaker 1">
+          </figure>
+          <p><strong>Speaker Name 1</strong><br>Affiliation</p>
+        </div>
+        <div class="column is-one-sixth has-text-centered">
+          <figure class="image is-128x128 is-inline-block">
+            <img src="./assets/images/speaker2.png" alt="Speaker 2">
+          </figure>
+          <p><strong>Speaker Name 2</strong><br>Affiliation</p>
+        </div>
+        <div class="column is-one-sixth has-text-centered">
+          <figure class="image is-128x128 is-inline-block">
+            <img src="./assets/images/speaker3.png" alt="Speaker 3">
+          </figure>
+          <p><strong>Speaker Name 3</strong><br>Affiliation</p>
+        </div>
+        <div class="column is-one-sixth has-text-centered">
+          <figure class="image is-128x128 is-inline-block">
+            <img src="./assets/images/speaker4.png" alt="Speaker 4">
+          </figure>
+          <p><strong>Speaker Name 4</strong><br>Affiliation</p>
+        </div>
+        <div class="column is-one-sixth has-text-centered">
+          <figure class="image is-128x128 is-inline-block">
+            <img src="./assets/images/speaker5.png" alt="Speaker 5">
+          </figure>
+          <p><strong>Speaker Name 5</strong><br>Affiliation</p>
+        </div>
+        <div class="column is-one-sixth has-text-centered">
+          <figure class="image is-128x128 is-inline-block">
+            <img src="./assets/images/speaker6.png" alt="Speaker 6">
+          </figure>
+          <p><strong>Speaker Name 6</strong><br>Affiliation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="schedule" class="section">
+    <div class="container is-max-desktop">
+      <!-- Schedule. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">Schedule</h2>
+          <div class="content center has-text-justified">
+            <div class="has-text-grey italic">The following schedule is expected and subject to change.</div>
+            <br>
+            <div class="table-container">
+              <table id="schedule-table" class="table is-striped is-fullwidth">
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Event</th>
+                  </tr>
+                </thead>
+                <tbody id="schedule-table-body">
+                  <tr>
+                    <td>09:00 – 09:05</td>
+                    <td>Opening Remarks</td>
+                  </tr>
+                  <tr>
+                    <td>09:05 – 09:15</td>
+                    <td>Workshop Introduction</td>
+                  </tr>
+                  <tr>
+                    <td>09:15 – 09:35</td>
+                    <td>Invited Talk #1</td>
+                  </tr>
+                  <tr>
+                    <td>09:35 – 09:55</td>
+                    <td>Invited Talk #2</td>
+                  </tr>
+                  <tr>
+                    <td>09:55 – 10:15</td>
+                    <td>Invited Talk #3</td>
+                  </tr>
+                  <tr>
+                    <td>10:15 – 10:30</td>
+                    <td>Coffee Break</td>
+                  </tr>
+                  <tr>
+                    <td>10:30 – 10:50</td>
+                    <td>Invited Talk #4</td>
+                  </tr>
+                  <tr>
+                    <td>10:50 – 11:10</td>
+                    <td>Invited Talk #5</td>
+                  </tr>
+                  <tr>
+                    <td>11:10 – 11:30</td>
+                    <td>Invited Talk #6</td>
+                  </tr>
+                  <tr>
+                    <td>11:30 – 11:50</td>
+                    <td>Panel Discussion</td>
+                  </tr>
+                  <tr>
+                    <td>11:50 – 12:15</td>
+                    <td>Guided Q&A & Closing Remarks</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <!--/ Schedule. -->
+      </div>
+  </section>
+  
+  
+
+  <section id="organizers" class="section">
+    <div class="container is-max-desktop">
+      <h2 class="center title is-3">Organizers</h2>
+      <div class="columns is-centered is-multiline">
+        <div class="column is-one-fifth has-text-centered">
+          <figure class="image is-128x128 is-inline-block">
+            <img src="./assets/images/organizer1.png" alt="Yuxin Cai photo">
+          </figure>
+          <p><strong>Yuxin Cai</strong><br>PhD Candidate<br>Nanyang Technological University</p>
+        </div>
+        <div class="column is-one-fifth has-text-centered">
+          <figure class="image is-128x128 is-inline-block">
+            <img src="./assets/images/organizer2.png" alt="Yaru Niu photo">
+          </figure>
+          <p><strong>Yaru Niu</strong><br>PhD Candidate<br>Carnegie Mellon University</p>
+        </div>
+        <div class="column is-one-fifth has-text-centered">
+          <figure class="image is-128x128 is-inline-block">
+            <img src="./assets/images/organizer3.png" alt="Wei-Yun Yau photo">
+          </figure>
+          <p><strong>Wei-Yun Yau</strong><br>Institute for Infocomm Research (I2R)<br>A*STAR Singapore</p>
+        </div>
+        <div class="column is-one-fifth has-text-centered">
+          <figure class="image is-128x128 is-inline-block">
+            <img src="./assets/images/organizer4.png" alt="Ding Zhao photo">
+          </figure>
+          <p><strong>Ding Zhao</strong><br>Carnegie Mellon University</p>
+        </div>
+        <div class="column is-one-fifth has-text-centered">
+          <figure class="image is-128x128 is-inline-block">
+            <img src="./assets/images/organizer5.png" alt="Chen Lv photo">
+          </figure>
+          <p><strong>Chen Lv</strong><br>Nanyang Technological University</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="contact" class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">Contact</h2>
+          <div class="content center has-text-justified">
+            Please feel free to send us your queries via email at <a href="mailto:caiy0039@e.ntu.edu.sg">caiy0039@e.ntu.edu.sg</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+<script src="./assets/js/jquery.min.js"></script>
+<script defer src="./assets/js/fontawesome.all.min.js"></script>
+<script src="./assets/js/bulma-carousel.min.js"></script>
+<script src="./assets/js/bulma-slider.min.js"></script>
+<script src="./assets/js/config.js"></script>
+<script src="./assets/js/index.js"></script>
+
+</html>
