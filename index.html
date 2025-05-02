@@ -29,7 +29,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Reasoning as a Bridge: Building Safe Cross-Embodiment Generalist</h1>
+            <h1 class="title is-1 publication-title">Reasoning as a Bridge: Building Trustworthy Cross-Embodiment Policy</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <h1>CoRL 2025 Workshop</h1>
@@ -84,51 +84,51 @@
           <h2 class="title is-3">Overview</h2>
           <div class="content has-text-justified">
             <p>
-              Scaling robot learning toward generalist capabilities requires more than accumulating vast datasets across diverse platforms; it demands generalizing policies across different embodiments — such as manipulation arms, quadrupeds, wheeled robots, and aerial vehicles — each with distinct dynamics, morphologies, and sensorimotor constraints.
+              As robots are increasingly deployed in diverse and open-ended environments, building <strong>trustworthy policies</strong> is essential. In this workshop, we interpret trustworthiness as the integration of two core capabilities: <strong>safety</strong> — ensuring reliable and predictable behavior under real-world conditions — and <strong>generalization</strong> — enabling effective policy transfer across tasks, domains, and robotic embodiments. Together, these attributes are key to achieving scalable, robust autonomy across platforms like manipulators, quadrupeds, drones, and mobile robots, each with distinct dynamics, morphologies, and sensing capabilities.
               <br><br>
-              While recent advances like π0, OpenVLA, and RT-X show that large-scale training across multiple embodiments is possible, most follow-up approaches rely on domain adaptation strategies — such as fine-tuning, prompting, or adapters — rather than solving the core challenge: how to learn policies that generalize structurally across different bodies.
+              Recent multi-embodiment policy frameworks (e.g., π0, OpenVLA, RT-X) show promising scalability, but their success often hinges on domain-specific adaptation or data-intensive retraining. These approaches rarely address the core question: <em>How do we build policies that generalize structurally and safely across bodies?</em>
               <br><br>
-              We argue that achieving true policy generalization across embodiments demands robust abstractions over perception, action, and control. Approaches such as reasoning, imitation learning, and morphology-aware representation learning all offer complementary pathways toward this goal. In particular, structured reasoning modules — leveraging intermediate world models, causal structures, or semantic embeddings — may enable transferable decision-making across embodiments. Similarly, imitation learning and skill transfer from diverse agents or tasks can offer practical and scalable methods to align policies across morphologies.
+              We posit that <strong>reasoning is a key enabler of trustworthy cross-embodiment policy learning</strong>. Structured reasoning modules — grounded in causal world models, intermediate abstractions, or semantic representations — can help robots make decisions that are safe, interpretable, and transferrable across embodiments. Equally important are methods like representation learning, and morphology-aware policy design, which offer scalable mechanisms to align behaviors across diverse agents.
               <br><br>
-              Language provides a promising modality for expressing reasoning steps and policies in an interpretable and transferable way. By using language-conditioned representations of goals, plans, and affordances, robots can leverage foundation models (e.g., VLMs, LLMs) to support scalable policy generalization across embodiments. However, alternative approaches that directly learn shared policies or skills across bodies — without explicit reasoning — are equally important.
+              Language, as a medium of abstraction and compositionality, further provides a natural interface for expressing transferable intent, constraints, and affordances. Vision-language and Vision-language-action models (e.g., VLMs, VLAs) hold great potential for bridging embodiment gaps through interpretable goal representation and instruction-following capabilities.
               <br><br>
-              This workshop will focus on one central question: <strong>How can we enable robust policy generalization across diverse robotic embodiments — through reasoning, imitation, representation learning, or other scalable mechanisms?</strong>
+              This workshop will investigate one central question: <strong>How can we build safe policies that generalize across robotic embodiments using reasoning and related scalable techniques?</strong>
               <br><br>
-              Topics and guiding questions include:
+              Topics of interest include:
               <ul>
-                <li><strong>Reasoning for Policy Generalization:</strong> How can reasoning modules help bridge embodiment gaps through structured decision-making?</li>
-                <li><strong>Imitation Learning and Cross-Embodiment Skill Transfer:</strong> How can policies trained via imitation or demonstrations from one body generalize to another?</li>
-                <li><strong>Intermediate Representations for Generalization:</strong> What semantic, causal, or dynamics-invariant representations best support transfer across embodiments?</li>
-                <li><strong>Language and Foundation Models:</strong> How can language or large models (VLMs/LLMs) support embodied reasoning or transferable policy expression?</li>
-                <li><strong>Embodiment-Aware Learning:</strong> How can policies adapt to specific actuation, perception, and morphology while maintaining generality?</li>
-                <li><strong>Benchmarks and Evaluation:</strong> How do we meaningfully measure cross-embodiment policy generalization in both simulation and real-world settings?</li>
+                <li><strong>Structured Reasoning for Transfer:</strong> How can world models, causal reasoning, or chain-of-thought methods support cross-embodiment generalization?</li>
+                <li><strong>Safety and Robustness:</strong> How do we ensure safe behavior when transferring policies across bodies with different control spaces or constraints?</li>
+                <li><strong>Language and Foundation Models:</strong> How can language-based representations enhance policy transfer and interpretability?</li>
+                <li><strong>Imitation Learning and Cross-Embodiment Skill Transfer: </strong> What are scalable strategies to align policies across embodiments using demonstrations or distillation?</li>
+                <li><strong>Representation Learning:</strong> What embeddings or abstractions best support morphology- and dynamics-invariant policies?</li>
+                <li><strong>Evaluation and Benchmarking:</strong> How should we measure safety, trust, and generalization across embodiments in simulation and reality?</li>
               </ul>
               <br>
-              The workshop will feature invited talks from leading experts, contributed presentations, panel discussions, and interactive sessions to foster deep cross-disciplinary conversations.
-              <br><br>
-              <strong>Why This Workshop Benefits the Robot Learning Community</strong>
+              <strong>Why This Workshop Is Timely and Important</strong>
               <br>
-              Policy generalization is a core challenge for deploying flexible, scalable, and adaptive robot learning systems. Without the ability to generalize across bodies, tasks, and sensorimotor constraints, robots must be retrained for every new platform — a fundamental bottleneck for real-world applications.
+              Generalist robot intelligence depends on building policies that transfer safely and effectively across embodiments — a challenge at the heart of scalable real-world deployment. Without structural generalization, every new morphology requires costly retraining, limiting adaptability and trust.
               <br><br>
-              This workshop addresses the urgent need for scalable methods that bridge embodiment gaps — whether through reasoning, shared representations, imitation learning, or foundation model adaptation. By broadening the conversation to include diverse approaches, this workshop will define critical open problems, identify useful abstractions, and connect sub-communities working toward generalist robotic intelligence.
+              By focusing on reasoning-based, interpretable, and robust methods for cross-embodiment transfer, this workshop aims to foster new directions in robot learning — drawing insights from policy learning, multimodal reasoning, representation learning, and safety-focused design.
               <br><br>
-              <strong>Intended Audience and Presenter Communities</strong>
+              <strong>Intended Audience</strong>
               <br>
-              This workshop targets researchers from:
+              We invite researchers from:
               <ul>
-                <li>Robot Learning (policy generalization, cross-domain transfer, imitation learning)</li>
-                <li>Embodied AI (vision-language-action reasoning, multimodal foundation models, multimodal reasoning)</li>
+                <li>Robot Learning and Embodied AI (policy generalization, cross-domain transfer, imitation learning)</li>
+                <li>Reasoning and Foundation Models (VLAs, VLMs, language-action alignment)</li>
+                <li>Safety and Trustworthy AI (safe RL, verifiable learning, robustness)</li>
                 <li>Reinforcement and Imitation Learning (transfer, continual learning, causal RL)</li>
-                <li>Representation Learning (embodiment-aware and dynamics-invariant modelling)</li>
+                <li>Representation Learning (abstractions, shared embeddings, embodiment-aware skill transfer)</li>
               </ul>
               <br>
-              We intend to draw invited speakers and participants from leading academic groups and industry research labs working at the intersection of robot learning, reasoning, cross-embodiment transfer, and scalable generalist intelligence.
+              We aim to bring together a cross-disciplinary audience from academia and industry to advance the frontiers of generalist, trustworthy, and transferable robot intelligence.
             </p>
           </div>
         </div>
       </div>
     </div>
   </section>
+  
 
   <section id="speakers" class="section">
     <div class="container is-max-desktop">
@@ -136,9 +136,9 @@
       <div class="columns is-multiline is-centered">
         <div class="column is-one-sixth has-text-centered">
           <figure class="image is-128x128 is-inline-block">
-            <img src="./assets/images/speaker1.png" alt="Speaker 1">
+            <img src="./assets/images/talks/mengdi.jpeg" alt="Mengdi Xu">
           </figure>
-          <p><strong>Speaker Name 1</strong><br>Affiliation</p>
+          <p><strong>Mengdi Xu</strong><br>Stanford University</p>
         </div>
         <div class="column is-one-sixth has-text-centered">
           <figure class="image is-128x128 is-inline-block">
@@ -256,31 +256,25 @@
       <div class="columns is-centered is-multiline">
         <div class="column is-one-fifth has-text-centered">
           <figure class="image is-128x128 is-inline-block">
-            <img src="./assets/images/organizer1.png" alt="Yuxin Cai photo">
+            <img src="./assets/images/organizers/cyx.jpeg" alt="Yuxin Cai photo">
           </figure>
           <p><strong>Yuxin Cai</strong><br>PhD Candidate<br>Nanyang Technological University</p>
         </div>
         <div class="column is-one-fifth has-text-centered">
           <figure class="image is-128x128 is-inline-block">
-            <img src="./assets/images/organizer2.png" alt="Yaru Niu photo">
+            <img src="./assets/images/organizers/yaru.jpeg" alt="Yaru Niu photo">
           </figure>
           <p><strong>Yaru Niu</strong><br>PhD Candidate<br>Carnegie Mellon University</p>
         </div>
         <div class="column is-one-fifth has-text-centered">
           <figure class="image is-128x128 is-inline-block">
-            <img src="./assets/images/organizer3.png" alt="Wei-Yun Yau photo">
+            <img src="./assets/images/organizers/ywy.jpg" alt="Wei-Yun Yau photo">
           </figure>
           <p><strong>Wei-Yun Yau</strong><br>Institute for Infocomm Research (I2R)<br>A*STAR Singapore</p>
         </div>
         <div class="column is-one-fifth has-text-centered">
           <figure class="image is-128x128 is-inline-block">
-            <img src="./assets/images/organizer4.png" alt="Ding Zhao photo">
-          </figure>
-          <p><strong>Ding Zhao</strong><br>Carnegie Mellon University</p>
-        </div>
-        <div class="column is-one-fifth has-text-centered">
-          <figure class="image is-128x128 is-inline-block">
-            <img src="./assets/images/organizer5.png" alt="Chen Lv photo">
+            <img src="./assets/images/organizers/lyuchen.jpg" alt="Chen Lv photo">
           </figure>
           <p><strong>Chen Lv</strong><br>Nanyang Technological University</p>
         </div>
@@ -290,19 +284,26 @@
       <div class="columns is-centered is-multiline">
         <div class="column is-one-fifth has-text-centered">
           <figure class="image is-128x128 is-inline-block">
-            <img src="./assets/images/organizer6.png" alt="Jonathan Francis photo">
+            <img src="./assets/images/organizers/jonathan.jpeg" alt="Jonathan Francis photo">
           </figure>
           <p><strong>Jonathan Francis</strong><br>Bosch Center for AI<br>Carnegie Mellon University</p>
         </div>
         <div class="column is-one-fifth has-text-centered">
           <figure class="image is-128x128 is-inline-block">
-            <img src="./assets/images/organizer7.png" alt="Bingqing Chen photo">
+            <img src="./assets/images/organizers/bingqing.jpeg" alt="Bingqing Chen photo">
           </figure>
           <p><strong>Bingqing Chen</strong><br>Bosch Center for AI</p>
+        </div>
+        <div class="column is-one-fifth has-text-centered">
+          <figure class="image is-128x128 is-inline-block">
+            <img src="./assets/images/organizers/zd.jpeg" alt="Ding Zhao photo">
+          </figure>
+          <p><strong>Ding Zhao</strong><br>Carnegie Mellon University</p>
         </div>
       </div>
     </div>
   </section>
+  
   
   
 
