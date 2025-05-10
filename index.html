@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="./assets/css/index.css">
   
 
-  <link rel="icon" type="image/png" href="./assets/images/corl_logo.png">
+  <link rel="icon" type="image/png" href="./assets/images/robot-face-icon.png">
   <img src="./assets/images/corl_logo.png" alt="Workshop Logo" style="max-height: 100px;">
 
 </head>
@@ -84,50 +84,54 @@
           <h2 class="title is-3">Overview</h2>
           <div class="content has-text-justified">
             <p>
-              As robots are increasingly deployed in diverse and open-ended environments, building <strong>trustworthy policies</strong> is essential. In this workshop, we interpret trustworthiness as the integration of two core capabilities: <strong>safety</strong> — ensuring reliable and predictable behavior under real-world conditions — and <strong>generalization</strong> — enabling effective policy transfer across tasks, domains, and robotic embodiments. Together, these attributes are key to achieving scalable, robust autonomy across platforms like manipulators, quadrupeds, drones, and mobile robots, each with distinct dynamics, morphologies, and sensing capabilities.
+              As robots are increasingly deployed in diverse and open-ended environments, developing <strong>trustworthy policies</strong> is critical. In this workshop, we define trustworthiness through two core capabilities:
+              <ul>
+                <li><strong>Safety:</strong> Ensuring reliable and predictable behavior under real-world conditions</li>
+                <li><strong>Generalization:</strong> Enabling effective policy transfer across tasks, domains, and robotic embodiments</li>
+              </ul>
+              These capabilities are essential for building scalable and robust autonomy across manipulators, quadrupeds, drones, and mobile robots — each with unique dynamics, morphologies, and sensing modalities.
               <br><br>
-              Recent multi-embodiment policy frameworks (e.g., π0, OpenVLA, RT-X) show promising scalability, but their success often hinges on domain-specific adaptation or data-intensive retraining. These approaches rarely address the core question: <em>How do we build policies that generalize structurally and safely across bodies?</em>
+              While recent frameworks such as π<sub>0</sub> and OpenVLA demonstrate promising scalability, they often depend on domain-specific tuning or data-intensive retraining. This workshop addresses a deeper question: <em>How do we build policies that generalize structurally and safely across diverse bodies?</em>
               <br><br>
-              We posit that <strong>reasoning is a key enabler of trustworthy cross-embodiment policy learning</strong>. Structured reasoning modules — grounded in causal world models, intermediate abstractions, or semantic representations — can help robots make decisions that are safe, interpretable, and transferrable across embodiments. Equally important are methods like representation learning, and morphology-aware policy design, which offer scalable mechanisms to align behaviors across diverse agents.
+              We argue that <strong>reasoning is a key enabler of cross-embodiment policy learning</strong>. Structured reasoning through causal models, semantic abstractions, or intermediate representations can guide safe, interpretable, and transferable decision-making. Complementary methods—such as representation learning and morphology-aware policy design—offer scalable tools for aligning behavior across distinct embodiments.
               <br><br>
-              Language, as a medium of abstraction and compositionality, further provides a natural interface for expressing transferable intent, constraints, and affordances. Vision-language and Vision-language-action models (e.g., VLMs, VLAs) hold great potential for bridging embodiment gaps through interpretable goal representation and instruction-following capabilities.
+              <strong>Language</strong> introduces a powerful medium for abstraction and compositionality, providing an interface to express intent, constraints, and affordances in a transferable way. Vision-language and vision-language-action models (e.g., VLMs, VLAs) offer promising paths to bridge embodiment gaps through interpretable goal representations and instruction following.
               <br><br>
-              This workshop will investigate one central question: <strong>How can we build safe policies that generalize across robotic embodiments using reasoning and related scalable techniques?</strong>
+              This workshop centers on the following question: <strong>How can we build safe policies that generalize across robotic embodiments using reasoning and scalable interfaces?</strong>
               <br><br>
               Topics of interest include:
               <ul>
                 <li><strong>Structured Reasoning for Transfer:</strong> How can world models, causal reasoning, or chain-of-thought methods support cross-embodiment generalization?</li>
                 <li><strong>Safety and Robustness:</strong> How do we ensure safe behavior when transferring policies across bodies with different control spaces or constraints?</li>
-                <li><strong>Language and Foundation Models:</strong> How can language-based representations enhance policy transfer and interpretability?</li>
-                <li><strong>Imitation Learning and Cross-Embodiment Skill Transfer: </strong> What are scalable strategies to align policies across embodiments using demonstrations or distillation?</li>
-                <li><strong>Representation Learning:</strong> What embeddings or abstractions best support morphology- and dynamics-invariant policies?</li>
-                <li><strong>Evaluation and Benchmarking:</strong> How should we measure safety, trust, and generalization across embodiments in simulation and reality?</li>
+                <li><strong>Language and Foundation Models:</strong> How can language-based interfaces enhance interpretability and policy transfer?</li>
+                <li><strong>Imitation Learning and Cross-Embodiment Skill Transfer:</strong> What scalable strategies enable transfer via demonstrations, distillation, or alignment?</li>
+                <li><strong>Representation Learning:</strong> What embeddings or abstractions support morphology- and dynamics-invariant behaviors?</li>
+                <li><strong>Evaluation and Benchmarking:</strong> How should we measure safety, trust, and generalization across embodiments, in simulation and the real world?</li>
               </ul>
               <br>
-              <strong>Why This Workshop Is Timely and Important</strong>
-              <br>
-              Generalist robot intelligence depends on building policies that transfer safely and effectively across embodiments — a challenge at the heart of scalable real-world deployment. Without structural generalization, every new morphology requires costly retraining, limiting adaptability and trust.
-              <br><br>
-              By focusing on reasoning-based, interpretable, and robust methods for cross-embodiment transfer, this workshop aims to foster new directions in robot learning — drawing insights from policy learning, multimodal reasoning, representation learning, and safety-focused design.
-              <br><br>
-              <strong>Intended Audience</strong>
-              <br>
-              We invite researchers from:
+              <strong>Intended Audience and Presenter Communities</strong><br>
+              We invite researchers working in:
               <ul>
-                <li>Robot Learning and Embodied AI (policy generalization, cross-domain transfer, imitation learning)</li>
-                <li>Reasoning and Foundation Models (VLAs, VLMs, language-action alignment)</li>
-                <li>Safety and Trustworthy AI (safe RL, verifiable learning, robustness)</li>
-                <li>Reinforcement and Imitation Learning (transfer, continual learning, causal RL)</li>
-                <li>Representation Learning (abstractions, shared embeddings, embodiment-aware skill transfer)</li>
+                <li>Robot Learning and Embodied AI (policy generalization, imitation learning, transfer learning)</li>
+                <li>Reasoning and Foundation Models (VLAs, VLMs, structured world models)</li>
+                <li>Safety and Trustworthy AI (robust learning, safe policy transfer)</li>
+                <li>Reinforcement and Imitation Learning (causal RL, continual learning)</li>
+                <li>Representation Learning (morphology-aware abstractions, cross-domain alignment)</li>
               </ul>
-              <br>
-              We aim to bring together a cross-disciplinary audience from academia and industry to advance the frontiers of generalist, trustworthy, and transferable robot intelligence.
+              The workshop welcomes participation from academia and industry, and encourages cross-platform insights spanning manipulation, locomotion, aerial, and mobile robotics. Presenters will include experts in reasoning, control, and scalable policy learning, building bridges across traditionally siloed subfields.
+              <br><br>
+              <strong>Keywords:</strong><br>
+              • Cross-embodiment policy learning (imitation and skill transfer)<br>
+              • Reasoning in robot learning (semantic and causal abstraction)<br>
+              • Trustworthy autonomy (safety-critical and generalization)<br>
+              • Foundation models for robotics — Vision-language(-action) models
             </p>
           </div>
         </div>
       </div>
     </div>
   </section>
+  
   
 
   <section id="speakers" class="section">
@@ -204,7 +208,6 @@
     </div>
   </section>  
 
-
   <section id="schedule" class="section">
     <div class="container is-max-desktop">
       <!-- Schedule. -->
@@ -212,7 +215,11 @@
         <div class="column">
           <h2 class="title is-3">Schedule</h2>
           <div class="content center has-text-justified">
-            <div class="has-text-grey italic">The following schedule is expected and subject to change.</div>
+            <div class="has-text-grey italic">This workshop is structured as a full-day, 
+              in-person event designed to foster engagement around reasoning and trustworthy cross-embodiment 
+              policy learning. The program blends invited talks, interactive panel discussions, and spotlighted 
+              contributed works to facilitate both impactful knowledge exchange and vibrant community discussion. 
+              The following schedule is expected and subject to change.</div>
             <br>
             <div class="table-container">
               <table id="schedule-table" class="table is-striped is-fullwidth">
@@ -223,58 +230,34 @@
                   </tr>
                 </thead>
                 <tbody id="schedule-table-body">
-                  <tr>
-                    <td>09:00 – 09:05</td>
-                    <td>Opening Remarks</td>
-                  </tr>
-                  <tr>
-                    <td>09:05 – 09:15</td>
-                    <td>Workshop Introduction</td>
-                  </tr>
-                  <tr>
-                    <td>09:15 – 09:35</td>
-                    <td>Invited Talk #1</td>
-                  </tr>
-                  <tr>
-                    <td>09:35 – 09:55</td>
-                    <td>Invited Talk #2</td>
-                  </tr>
-                  <tr>
-                    <td>09:55 – 10:15</td>
-                    <td>Invited Talk #3</td>
-                  </tr>
-                  <tr>
-                    <td>10:15 – 10:30</td>
-                    <td>Coffee Break</td>
-                  </tr>
-                  <tr>
-                    <td>10:30 – 10:50</td>
-                    <td>Invited Talk #4</td>
-                  </tr>
-                  <tr>
-                    <td>10:50 – 11:10</td>
-                    <td>Invited Talk #5</td>
-                  </tr>
-                  <tr>
-                    <td>11:10 – 11:30</td>
-                    <td>Invited Talk #6</td>
-                  </tr>
-                  <tr>
-                    <td>11:30 – 11:50</td>
-                    <td>Panel Discussion</td>
-                  </tr>
-                  <tr>
-                    <td>11:50 – 12:15</td>
-                    <td>Guided Q&A & Closing Remarks</td>
-                  </tr>
+                  <tr><td>09:25 – 09:30</td><td>Welcome and Introduction</td></tr>
+                  <tr><td>09:30 – 09:50</td><td>Invited Talk #1</td></tr>
+                  <tr><td>09:50 – 10:10</td><td>Invited Talk #2</td></tr>
+                  <tr><td>10:10 – 10:30</td><td>Paper Spotlights I</td></tr>
+                  <tr><td>10:30 – 11:00</td><td>Poster Session & Coffee Break</td></tr>
+                  <tr><td>11:00 – 11:20</td><td>Invited Talk #3</td></tr>
+                  <tr><td>11:20 – 11:50</td><td>Invited Talk #4</td></tr>
+                  <tr><td>11:50 – 12:30</td><td>Panel Discussion I</td></tr>
+                  <tr><td>12:30 – 13:30</td><td>Lunch Break</td></tr>
+                  <tr><td>13:30 – 13:50</td><td>Invited Talk #5</td></tr>
+                  <tr><td>13:50 – 14:10</td><td>Invited Talk #6</td></tr>
+                  <tr><td>14:10 – 14:30</td><td>Paper Spotlights II</td></tr>
+                  <tr><td>14:30 – 15:00</td><td>Poster Session & Coffee Break</td></tr>
+                  <tr><td>15:00 – 15:20</td><td>Invited Talk #7</td></tr>
+                  <tr><td>15:20 – 15:40</td><td>Invited Talk #8</td></tr>
+                  <tr><td>15:40 – 16:20</td><td>Panel Discussion II</td></tr>
+                  <tr><td>16:20 – 16:30</td><td>Closing Remarks</td></tr>
                 </tbody>
               </table>
             </div>
+            <br>
+            <p><strong>Remarks:</strong> Each invited talk is allocated 20 minutes (15 min presentation + 5 min Q&A). Panel discussions are 40 minutes each, with short opening remarks, moderated discussions, and audience Q&A.</p>
           </div>
         </div>
-        <!--/ Schedule. -->
       </div>
-  </section>
+      <!--/ Schedule. -->
+    </div>
+  </section>  
   
   
 
@@ -288,7 +271,9 @@
           <figure class="image is-128x128 is-inline-block">
             <img src="./assets/images/organizers/cyx.jpeg" alt="Yuxin Cai photo">
           </figure>
-          <p><strong>Yuxin Cai</strong><br>Nanyang Technological University</p>
+          <p><strong>Yuxin Cai
+            <a href="https://yuxin916.github.io/" target="_blank" rel="noopener noreferrer">🤖</a>
+          </strong><br>Nanyang Technological University</p>
         </div>
         
         <div class="column is-one-fifth has-text-centered">
