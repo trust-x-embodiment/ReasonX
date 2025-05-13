@@ -84,20 +84,33 @@
           <h2 class="title is-3">Overview</h2>
           <div class="content has-text-justified">
             <p>
-              As robots are increasingly deployed in diverse and open-ended environments, developing <strong>trustworthy policies</strong> is critical. In this workshop, we define trustworthiness through two core capabilities:
+              As robots are increasingly deployed in diverse and open-ended environments, building <strong>trustworthy policies</strong> is essential. 
+              In this workshop, we interpret trustworthiness as the integration of two core capabilities: 
               <ul>
-                <li><strong>Safety:</strong> Ensuring reliable and predictable behavior under real-world conditions</li>
-                <li><strong>Generalization:</strong> Enabling effective policy transfer across tasks, domains, and robotic embodiments</li>
+                <li><strong>Safety:</strong> ensuring reliable and predictable behaviour under real-world conditions;</li>
+                <li><strong>Generalization:</strong> enabling effective policy transfer across tasks, domains, and robotic embodiments.</li>
               </ul>
-              These capabilities are essential for building scalable and robust autonomy across manipulators, quadrupeds, drones, and mobile robots — each with unique dynamics, morphologies, and sensing modalities.
+              These two pillars are foundational to achieving scalable, robust autonomy across a wide spectrum of platforms — including manipulators, quadrupeds, humanoids, aerial drones, 
+              mobile robots, and autonomous vehicles — each presenting distinct challenges in terms of dynamics, morphology, and sensory input. 
+              As the field progresses toward more generalist systems, ensuring that policies can adapt safely across such heterogeneous embodiments is crucial for real-world deployment at scale.
               <br><br>
-              While recent frameworks such as π<sub>0</sub> and OpenVLA demonstrate promising scalability, they often depend on domain-specific tuning or data-intensive retraining. This workshop addresses a deeper question: <em>How do we build policies that generalize structurally and safely across diverse bodies?</em>
+              Recent frameworks for cross-embodiment policy frameworks (e.g., π<sub>0</sub>, OpenVLA) demonstrate promising scalability. 
+              However, they often rely on domain-specific adaptation or data-intensive retraining, and seldom address the deeper question: 
               <br><br>
-              We argue that <strong>reasoning is a key enabler of cross-embodiment policy learning</strong>. Structured reasoning through causal models, semantic abstractions, or intermediate representations can guide safe, interpretable, and transferable decision-making. Complementary methods—such as representation learning and morphology-aware policy design—offer scalable tools for aligning behavior across distinct embodiments.
+              <div class="has-text-centered">
+                <em>How do we build policies that generalize structurally and safely across diverse bodies?</em>
+              </div>
+              <br>
+              We posit that <strong>reasoning is a key enabler of trustworthy cross-embodiment policy learning</strong>. Structured reasoning—via causal world models, 
+              semantic abstractions, or intermediate representations—can help robots make decisions that are </strong>safe, interpretable, and transferrable 
+              across embodiments</strong>. Additionally, methods such as representation learning and morphology-aware policy design provide scalable 
+              tools for aligning behaviour across diverse embodiments.
               <br><br>
-              <strong>Language</strong> introduces a powerful medium for abstraction and compositionality, providing an interface to express intent, constraints, and affordances in a transferable way. Vision-language and vision-language-action models (e.g., VLMs, VLAs) offer promising paths to bridge embodiment gaps through interpretable goal representations and instruction following.
+              <strong>Language</strong>, as a medium of abstraction and compositionality, further provides a natural interface for expressing 
+              transferable intent, constraints, and affordances. Vision-language and Vision-language-action models (e.g., VLMs, VLAs) 
+              hold great potential for bridging embodiment gaps through interpretable goal representation and instruction-following capabilities.
               <br><br>
-              This workshop centers on the following question: <strong>How can we build safe policies that generalize across robotic embodiments using reasoning and scalable interfaces?</strong>
+              This workshop will investigate one central question: <strong>How can we build safe policies that generalize across robotic embodiments using reasoning and related scalable techniques as the interface?</strong>
               <br><br>
               Topics of interest include:
               <ul>
@@ -109,7 +122,7 @@
                 <li><strong>Evaluation and Benchmarking:</strong> How should we measure safety, trust, and generalization across embodiments, in simulation and the real world?</li>
               </ul>
               <br>
-              <strong>Intended Audience and Presenter Communities</strong><br>
+              <!-- <strong>Intended Audience and Presenter Communities</strong><br>
               We invite researchers working in:
               <ul>
                 <li>Robot Learning and Embodied AI (policy generalization, imitation learning, transfer learning)</li>
@@ -119,12 +132,14 @@
                 <li>Representation Learning (morphology-aware abstractions, cross-domain alignment)</li>
               </ul>
               The workshop welcomes participation from academia and industry, and encourages cross-platform insights spanning manipulation, locomotion, aerial, and mobile robotics. Presenters will include experts in reasoning, control, and scalable policy learning, building bridges across traditionally siloed subfields.
-              <br><br>
+              <br><br> -->
               <strong>Keywords:</strong><br>
-              • Cross-embodiment policy learning (imitation and skill transfer)<br>
-              • Reasoning in robot learning (semantic and causal abstraction)<br>
-              • Trustworthy autonomy (safety-critical and generalization)<br>
-              • Foundation models for robotics — Vision-language(-action) models
+              <ul>
+                <li>Cross-embodiment policy learning (imitation and skill transfer)</li>
+                <li>Reasoning in robot learning (semantic and causal abstraction)</li>
+                <li>Trustworthy autonomy (safety and generalization)</li>
+                <li>Foundation models for robotics (Vision-language(-action) models)</li>
+              </ul>
             </p>
           </div>
         </div>
@@ -138,7 +153,7 @@
     <div class="container is-max-desktop">
       <h2 class="center title is-3">Speakers</h2>
       <div class="columns is-multiline is-centered">
-        <div class="column is-one-quarter has-text-centered">
+        <div class="column is-one-fifth has-text-centered">
           <figure class="image is-128x128 is-inline-block">
             <img src="./assets/images/talks/chelsea.jpg" alt="Chelsea Finn">
           </figure>
@@ -147,7 +162,7 @@
             <a href="https://ai.stanford.edu/~cbfinn/" target="_blank" rel="noopener noreferrer">🤖</a>
           </strong><br>Stanford University<br>Physical Intelligence</p>
         </div>
-        <div class="column is-one-quarter has-text-centered">
+        <div class="column is-one-fifth has-text-centered">
           <figure class="image is-128x128 is-inline-block">
             <img src="./assets/images/talks/davide.jpg" alt="Davide Scaramuzza">
           </figure>
@@ -156,7 +171,7 @@
             <a href="https://rpg.ifi.uzh.ch/people_scaramuzza.html" target="_blank" rel="noopener noreferrer">🤖</a>
           </strong><br>University of Zurich</p>
         </div>
-        <div class="column is-one-quarter has-text-centered">
+        <div class="column is-one-fifth has-text-centered">
           <figure class="image is-128x128 is-inline-block">
             <img src="./assets/images/talks/mengdi.jpeg" alt="Mengdi Xu">
           </figure>
@@ -165,7 +180,7 @@
             <a href="https://mxu34.github.io/" target="_blank" rel="noopener noreferrer">🤖</a>
           </strong><br>Stanford University /<br>Tsinghua University</p>
         </div>
-        <div class="column is-one-quarter has-text-centered">
+        <div class="column is-one-fifth has-text-centered">
           <figure class="image is-128x128 is-inline-block">
             <img src="./assets/images/talks/wenhao.jpg" alt="Wenhao Yu">
           </figure>
@@ -173,7 +188,7 @@
             <a href="https://wenhaoyu.weebly.com/" target="_blank" rel="noopener noreferrer">🤖</a>
           </strong><br>Google DeepMind</p>
         </div>
-        <div class="column is-one-quarter has-text-centered">
+        <div class="column is-one-fifth has-text-centered">
           <figure class="image is-128x128 is-inline-block">
             <img src="./assets/images/talks/ogata.jpg" alt="Tetsuya Ogata">
           </figure>
@@ -181,7 +196,7 @@
             <a href="https://ogata-lab.jp/member/ogata.html" target="_blank" rel="noopener noreferrer">🤖</a>
           </strong><br>Waseda University <br>Artificial Intelligence Research Center, AIST</p>
         </div>
-        <div class="column is-one-quarter has-text-centered">
+        <div class="column is-one-fifth has-text-centered">
           <figure class="image is-128x128 is-inline-block">
             <img src="./assets/images/talks/yonatan.jpg" alt="Yonatan Bisk">
           </figure>
@@ -189,15 +204,15 @@
             <a href="https://talkingtorobots.com/yonatanbisk.html" target="_blank" rel="noopener noreferrer">🤖</a>
           </strong><br>Carnegie Mellon University</p>
         </div>
-        <div class="column is-one-quarter has-text-centered">
+        <div class="column is-one-fifth has-text-centered">
           <figure class="image is-128x128 is-inline-block">
             <img src="./assets/images/talks/yuke.jpg" alt="Yuke Zhu">
           </figure>
           <p><strong>Yuke Zhu
             <a href="https://yukezhu.me/" target="_blank" rel="noopener noreferrer">🤖</a>
           </strong><br>University of Texas at Austin <br>NVIDIA</p>
-      </div>
-        <div class="column is-one-quarter has-text-centered"> 
+        </div>
+        <div class="column is-one-fifth has-text-centered"> 
           <figure class="image is-128x128 is-inline-block">
             <img src="./assets/images/talks/marco.jpg" alt="Marco Pavone">
           </figure>
@@ -205,7 +220,21 @@
             <a href="https://web.stanford.edu/~pavone/index.html" target="_blank" rel="noopener noreferrer">🤖</a>
           </strong><br>Stanford University <br>NVIDIA</p>
         </div>
-    </div>
+        <div class="column is-one-fifth has-text-centered">
+          <figure class="image is-128x128 is-inline-block">
+            <img src="./assets/images/talks/lorenzo.jpeg" alt="Lorenzo Natale">
+          </figure>
+          <p><strong>Lorenzo Natale (Tentative)
+            <a href="https://lornat75.github.io/" target="_blank" rel="noopener noreferrer">🤖</a>
+          </strong><br>Istituto Italiano di Tecnologia (IIT)</p>
+        </div>
+        <div class="column is-one-fifth has-text-centered">
+          <figure class="image is-128x128 is-inline-block">
+            <img src="./assets/images/talks/auke.jpg" alt="Auke Ijspeert">
+          </figure>
+          <p><strong>Auke Ijspeert (Tentative)
+            <a href="https://www.epfl.ch/labs/biorob/people/ijspeert/" target="_blank" rel="noopener noreferrer">🤖</a>
+          </strong><br>Ecole Polytechnique Fédérale de Lausanne (EPFL), Switzerland</p>
   </section>  
 
   <section id="schedule" class="section">
@@ -219,7 +248,9 @@
               in-person event designed to foster engagement around reasoning and trustworthy cross-embodiment 
               policy learning. The program blends invited talks, interactive panel discussions, and spotlighted 
               contributed works to facilitate both impactful knowledge exchange and vibrant community discussion. 
-              The following schedule is expected and subject to change.</div>
+              <br><br>
+              The following schedule is expected and subject to change.
+            </div>
             <br>
             <div class="table-container">
               <table id="schedule-table" class="table is-striped is-fullwidth">
